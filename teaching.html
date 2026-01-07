@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="teaching">
+  <header class="teaching-header">
+    <h1 class="teaching-title">{{ page.title }}</h1>
+    {% if page.course_code %}
+    <p class="teaching-code">{{ page.course_code }}</p>
+    {% endif %}
+    {% if page.term %}
+    <p class="teaching-term">{{ page.term }}</p>
+    {% endif %}
+    {% if page.role %}
+    <p class="teaching-role">{{ page.role }}</p>
+    {% endif %}
+  </header>
+
+  <div class="teaching-content">
+    {{ content }}
+  </div>
+</article>

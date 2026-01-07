@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="home">
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Psicología en Valencia</h1>
+      <p class="hero-subtitle">Solo siendo capaces de tender una mano amable incluso en momentos difíciles, podemos conectar con el dolor compartido y descubrir lo que se esconde más allá de él.</p>
+      <a href="{{ site.calendly_url }}" class="btn btn-hero" target="_blank">Pide tu cita</a>
+    </div>
+  </section>
+
+  <section class="intro-section">
+    <div class="intro-content">
+      <h2>Compasión, Gratitud y Serenidad</h2>
+      <div class="intro-text">
+        <p>Soy <strong>{{ site.psychologist_name }}</strong>, psicóloga general sanitaria en Valencia, apasionada de la psicología y del contacto cercano con las personas. Mi enfoque se centra en la <strong>Terapia Cognitivo Conductual</strong> y en las <strong>terapias de tercera generación</strong> como el <strong>mindfulness</strong> y la <strong>compasión</strong>, acompañando a las personas en sus procesos personales y emocionales.</p>
+        
+        <p>A lo largo de mi trayectoria he participado en conferencias, ponencias y formaciones, y sigo en constante aprendizaje para ofrecer siempre el mejor acompañamiento.</p>
+        
+        <p>Mi propósito es claro: ayudar a generar lo que yo llamo <strong>corazones grandes y mentes fuertes</strong>, acompañando a cada persona en el camino hacia una vida más plena y equilibrada.</p>
+        
+        {% if site.college_number %}
+        <p><strong>Mi número de colegiada</strong> en el Colegio de Psicólogos de Valencia es <strong>{{ site.college_number }}</strong>.</p>
+        {% endif %}
+      </div>
+      <a href="{{ '/about/' | relative_url }}" class="btn">Conoce más sobre mí</a>
+    </div>
+  </section>
+
+  <section class="services-preview">
+    <h2>Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Psicología</h3>
+        <p class="service-location">Presencial en Valencia y Online</p>
+        <p>En mi consulta en Valencia (y también online) ofrezco un acompañamiento cercano, profesional y adaptado a cada persona.</p>
+        <ul class="service-list">
+          <li>Trastornos de ansiedad y estrés</li>
+          <li>Depresión</li>
+          <li>TOC</li>
+          <li>Terapia de pareja</li>
+        </ul>
+        <a href="{{ '/services/' | relative_url }}" class="btn btn-secondary">Ver todos los servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-preview">
+    <h2>¿Qué opinan sobre mí?</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-rating">★★★★★</div>
+        <blockquote>
+          <p>Increíble profesional, sientes confianza con ella de inmediato, comprende perfectamente lo que dices y lo que intentas decir. Muy humana. Te sientes muy agusto.</p>
+          <cite>— Ana L.</cite>
+        </blockquote>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">★★★★★</div>
+        <blockquote>
+          <p>Después de probar con muchos psicólogos tuve la suerte de conocer a Victoria y conectar con ella, ya que es muy cercana y se desvive por sus pacientes.</p>
+          <cite>— Mariani</cite>
+        </blockquote>
+      </div>
+    </div>
+    <a href="{{ '/testimonials/' | relative_url }}" class="btn">Ver todas las opiniones</a>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Listo para comenzar tu proceso?</h2>
+    <p>No importa cuál sea tu inquietud o problema, estaré encantada de ayudarte.</p>
+    <a href="{{ site.calendly_url }}" class="btn btn-hero" target="_blank">Reserva tu cita</a>
+  </section>
+</div>

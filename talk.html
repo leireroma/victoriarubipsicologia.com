@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="talk">
+  <header class="talk-header">
+    <h1 class="talk-title">{{ page.title }}</h1>
+    {% if page.venue %}
+    <p class="talk-venue">{{ page.venue }}</p>
+    {% endif %}
+    {% if page.date %}
+    <p class="talk-date">{{ page.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+    {% if page.location %}
+    <p class="talk-location">{{ page.location }}</p>
+    {% endif %}
+  </header>
+
+  <div class="talk-content">
+    {{ content }}
+  </div>
+
+  {% if page.slidesurl %}
+  <div class="talk-links">
+    <a href="{{ page.slidesurl }}" class="btn btn-primary">Slides</a>
+  </div>
+  {% endif %}
+</article>

@@ -1,0 +1,96 @@
+# Site Settings
+title: "Victoria Rubi Bonet - Psicóloga"
+name: "Victoria Rubi Bonet"
+description: "Psicóloga en Valencia. Terapia presencial y online. Ansiedad, depresión, TOC y más."
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Social Media
+linkedin_username: victoriarubibonet
+
+# Email
+email: contacto@victoriarubibonet.com
+
+# Phone
+phone: "+34 XXX XXX XXX"
+
+# Location
+location: "Valencia, España"
+
+# Calendly
+calendly_url: "https://calendly.com/victoriarubipsicologia/30min"
+
+# Professional Info
+psychologist_name: "Victoria Rubi Bonet"
+college_number: "CVXXXXX"
+specialties:
+  - "Terapia Cognitivo Conductual"
+  - "Terapias de tercera generación"
+  - "Mindfulness"
+  - "Compasión"
+
+# Site Author
+author:
+  name: "Victoria Rubi Bonet"
+  email: "contacto@victoriarubibonet.com"
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+  talks:
+    output: true
+    permalink: /:collection/:name/
+  teaching:
+    output: true
+    permalink: /:collection/:name/
+  portfolio:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "talk"
+  - scope:
+      path: ""
+      type: "teaching"
+    values:
+      layout: "teaching"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio"

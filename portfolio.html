@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="portfolio">
+  <header class="portfolio-header">
+    <h1 class="portfolio-title">{{ page.title }}</h1>
+    {% if page.date %}
+    <p class="portfolio-date">{{ page.date | date: "%Y" }}</p>
+    {% endif %}
+  </header>
+
+  <div class="portfolio-content">
+    {{ content }}
+  </div>
+
+  {% if page.projecturl %}
+  <div class="portfolio-links">
+    <a href="{{ page.projecturl }}" class="btn btn-primary">Project Link</a>
+  </div>
+  {% endif %}
+</article>
